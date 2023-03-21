@@ -1,0 +1,78 @@
+
+body {
+    background: rgba(156, 198, 240, .8)
+}
+.mat-card{
+    border-radius: 32px;
+    margin: 20px 10px;
+    padding: 20px;
+    border-color: #0a66c2;
+    
+}
+.mat-card#first-card{
+    padding: 0;
+}
+
+div#profile-background {
+    display: flex;
+    z-index: 1;
+    
+}
+div#first-card#profile-background img{
+    width: 100%;
+    border-radius: 52px 52px 0 0;
+    
+}
+
+.profile_image{
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -110px;
+    z-index: 1;
+    padding: 15px;
+}
+div#info-actions{
+    margin: 20px;
+    display: flex;
+}
+
+i {
+    font-size: 30px;
+    color: #0a66c2;
+}
+
+/*div.btn-edit i{
+    margin-left: 50px;
+    margin-top: -150px;
+    margin: 0px;
+    padding: 15px;
+}*/
+
+.text-arcade {
+    color: #6a6c6e;
+    font-size: 18px;
+}
+
+.logo-institute   {
+    width: 140px;
+    height: 50px;
+}
+
+.logo-particular   {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-right{
+    display: flex;
+    align-self: flex-end;
+}
+i#logo-experiencia{
+    font-size: 80px;
+}
+
+.card-text{
+    color: #6a6c6e;
+    font-size: 25px;
+}

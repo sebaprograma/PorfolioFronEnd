@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <!-- bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- CSS-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ 
+    <!--contenido 2-->
+    <div class="card mat-card" id="first-card">
+        
+        <div id="profile_background"><img src="https://png.pngtree.com/background/20210714/original/pngtree-blue-carbon-background-with-sport-style-and-golden-light-picture-image_1200848.jpg" class="card-img-top"></div>
+        <div id="info" style="margin: 25x">
+
+            <div class="row">
+                <div class="col-sm-1" id="info-img">
+                    <img class="profile_image" src="https://img.freepik.com/vector-premium/avatar-hombre-imagen-perfil-web-masculina-generica_53562-18550.jpg">
+                            
+                </div>
+                <div class="col-sm-11">
+                    <div class="btn-edit"><a href="#" class="btn-rigth"><i class="bi bi-pencil-square"></i></a></div>
+                </div>
+            </div>
+
+            <!--informacion-->
+            <div class="row">
+                <div class="col-sm-9">
+                    <div id="info-data" style="margin: 20px">
+                        <h1>Sebastian Cacere</h1>
+                        <div id="info-company">Desarrollador web</div>
+                        <div id="info-contact">
+                            <span>Florencio Varela-Buenos Aires (Argentina)</span>
+                            <span><a href="#">Información de contacto</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"style="padding-right: 100px;">
+                        
+                    <div class="d-flex flex-row-reverse">
+                    <ul id="info-details">
+                        <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKl3AsmrDbLicEgJgZm_hDcHB7LTnKvslfpPVsgbrC1_iDb38Gbqsvgkwz8KNO4rFF_s&usqp=CAU" class="logo-particular"></a>
+                           <!-- <h3>ARG PROG</h3> -->
+                        </li>
+                        <li style="padding-top: 20px;"><a href="#">
+                            <img src="logo_seba.jpeg" class="logo-particular">   
+                            </a>
+                            <!-- <h3>SEBA</h3> -->
+                        </li>
+                    </ul>
+                    </div>
+                        
+                </div>
+                <div class="col-sm-1" style="padding-right: 80px;">
+                        
+                    <div class="d-flex flex-row-reverse" >
+                    <ul id="info-details">
+                        <li><a href="#"><img src="https://www.unaj.edu.ar/wp-content/uploads/2016/06/logo-unaj-2016-01.jpg" class="logo-institute"></a>
+                           <!-- <h3>UNAJ</h3> -->
+                        </li>
+                        <li  style="padding-top: 20px;"><a href="#">
+                            <img src="https://www.inti.gob.ar/assets/imagenes/inti-logo.png" class="logo-institute">   
+                            </a>
+                            <!-- <h3>INTI</h3> -->
+                        </li>
+                    </ul>
+                    </div>
+                        
+                </div>
+                
+            </div>
+
+            <!--botones-->
+            <div id="info-actions">
+                
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Tengo interés en</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Añadir Sección</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">Más</label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ACERCA DE-->
+    <section>
+    <div class="card mat-card">
+        <div class="row justify-content-between">
+            
+            <div class="card-titles col-sm-4">
+                <h2>ACERCA DE</h2>
+                
+            </div>
+
+            <div class="col-sm-2 text-end" style="margin-right: 45px;">
+                    <a class="btn-rigth">
+                        <div class="btn-edit" onclick="cambiar_parrafo()"><i class="bi bi-pencil-square"></i></div>
+                        
+                    </a>
+            </div>
+
+            <div>
+                <p id="text-arcade">tecnico, estudiante de ingniería, padre, marido e hijo</p>
+            </div>
+            <div>
+                <input id="edit-arcade" type="text" oninput="myFunction2(this.value)" style="display:none">
+            </div>
+            <div>
+                <input id="file1" type="file" onchange="showFile(this)" style="display:none">
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- EXPERIENCIA-->
+    <section>
+    <div class="card mat-card">
+        <!--titulos-->
+        <div class="row justify-content-between">
+            <!--columna izquierda-->
+            <div class="col-sm-5">
+                <div class="card-titles">
+                    <h2>EXPERIENCIA</h2>
+                </div>
+            </div>
+            <!--columna derecha-->
+            
+                <div class="col-sm-2 text-end" style="padding-right: 60px;">
+                    <a href="#" class="btn-rigth">
+                        <i class="bi bi-plus"></i>
+                    </a>
+                </div>
+        </div>
+        
+        <!--experiencia 1-->
+        <section>
+        <div class="card mat-card">
+            <div class="row justify-content-start">
+                <div class="col-sm-1">
+                    <i class="bi bi-1-square-fill" id="logo-experiencia"></i>
+                </div>
+                <div class="col-sm-9">
+                    <div class="card-titles">
+                        <h2>Desarrollador backEnd</h2>
+                    </div>
+                    <div class="text-arcade">
+                        <p>Pixar. Jornada Parcial</p>
+                    </div>
+                    <div>
+                        <h3 class="card-text">mar-2019- Actualidad- 2 años y 6 meses</h3>
+                    </div>
+                    <div>
+                        <h3 class="card-text">Guadalajara y alrededores (Mexico)</h3>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                
+                    <div class="btn-edit">
+                        <a href="#" class="btn-rigth">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                    </div>
+                
+                    <div>
+                        <a href="#" class="btn-rigth">
+                            <i class="bi bi-trash3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!--experiencia 2-->
+        <section>
+        <div class="card mat-card">
+            <div class="row justify-content-start">
+                <div class="col-sm-1">
+                    <i class="bi bi-2-square-fill" id="logo-experiencia"></i>
+                </div>
+                <div class="col-sm-9">
+                    <div class="card-titles">
+                        <h2>Desarrollador FrontEnd</h2>
+                    </div>
+                    <div class="text-arcade">
+                        <p>Facebook. Jornada Parcial</p>
+                    </div>
+                    <div>
+                        <h3 class="card-text">mar-2017- feb-2019- 2 años y 11 meses</h3>
+                    </div>
+                    <div>
+                        <h3 class="card-text">Silicon Valley (USA)</h3>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                
+                    <div class="btn-edit">
+                        <a href="#" class="btn-rigth">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                    </div>
+                
+                    <div>
+                        <a href="#" class="btn-rigth">
+                            <i class="bi bi-trash3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </section>
+        
+        
+    
+
+
+    <!-- javascript-->
+    <script>
+        function cambiar_parrafo(){
+            document.getElementById("file1").style.display="block";
+            document.getElementById("edit-arcade").style.display="block";
+            let texto= document.getElementById("text-arcade").innerText;
+            console.log(texto);
+        };
+
+        function myFunction2(valor){
+            document.getElementById("text-arcade").innerText=valor;
+        };
+
+        function logMessage(message) {
+            console.log(message+ "<br>");
+        };
+
+        //controla si se presiono un enter
+        let textarea= document.getElementById("edit-arcade")
+        textarea.addEventListener('keyup', (e) => {
+            logMessage('key "${e.key}" released [event: keyup]');
+            if (e.key=="Enter"){
+                document.getElementById("edit-arcade").style.display="none";
+                document.getElementById("file1").style.display="none";
+            }
+        });
+
+        //carga el contenido de un archivo de texto
+        //y lo muestra en el parrafo
+        function showFile (input){
+            let file= input.files[0];
+            alert(`File name: ${file.name}`); //e.g my.pong
+            alert(`last modified: ${file.lastModified}`);
+
+            let reader= new FileReader();
+            reader.readAsText(file);
+            reader.onload = function() {
+                console.log(reader.result);
+                myFunction2(reader.result);
+                document.getElementById("edit-arcade").style.display="none";
+                document.getElementById("file1").style.display="none";
+            };
+            reader.onerror=function(){
+                console.log(reader.error);
+            };
+        };
+        /**/
+    </script>
+</body>
+</html>
