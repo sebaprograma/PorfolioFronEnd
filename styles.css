@@ -13,15 +13,18 @@ body {
     padding: 0;
 }
 
-div#profile-background {
+div#profile_background {
     display: flex;
     z-index: 1;
     
 }
 div#first-card#profile-background img{
     width: 100%;
-    border-radius: 52px 52px 0 0;
+    border-radius: 32px 32px 0 0;
     
+}
+.card-img-top{
+    border-radius: 32px 32px 0 0;
 }
 
 .profile_image{
@@ -29,7 +32,8 @@ div#first-card#profile-background img{
     width: 152px;
     height: 152px;
     margin-top: -110px;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     padding: 15px;
 }
 div#info-actions{
@@ -49,7 +53,7 @@ i {
     padding: 15px;
 }*/
 
-.text-arcade {
+.text-gray-small {
     color: #6a6c6e;
     font-size: 18px;
 }
