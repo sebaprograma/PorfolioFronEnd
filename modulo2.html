@@ -13,6 +13,10 @@
 
   <!-- CSS-->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript-->
+  <script type="text/javascript" src="modulo2.js"></script>
+
 </head>
 
 <body>
@@ -234,7 +238,7 @@
     </section>
         
         <!-- EDUCACION -->
-    <section class="EDUCACION" id="id_educacion">
+    <section class="EDUCACION" id="id_educacion_seccion">
         <div class="card mat-card">
             <!--titulos-->
             <div class="row justify-content-between">
@@ -247,28 +251,28 @@
                 <!--columna derecha-->
                 
                     <div class="col-sm-2 text-end" style="padding-right: 60px;">
-                        <a href="#EXPERIENCIA" class="btn-rigth">
-                            <i class="bi bi-plus" onclick="agregarExperiencia()"></i>
+                        <a href="#EDUCACION" class="btn-rigth">
+                            <i class="bi bi-plus" onclick="agregarEducacion()"></i>
                         </a>
                     </div>
             </div>
             
             <!--EDUCACION 1-->
-            <section id="EXPERIENCIA1">
+            <section id="id_educacion_1" name="educacion_1">
             <div class="card mat-card">
                 <div class="row justify-content-start">
                     <div class="col-sm-2 col-xl-1">
-                        <i class="bi bi-1-square-fill" id="logo-experiencia"></i>
+                        <i class="bi bi-1-square-fill" id="logo-educacion"></i>
                     </div>
                     <div class="col-sm-8 col-xl-9">
                         <div class="card-titles exp-1">
-                            <h2>INGENIERO INFORMATICO</h2>
+                            <h2>Desarrollador Web</h2>
                         </div>
-                        <div id="text-gray-small" class="exp-1">
-                            <p>UNAJ en curso</p>
+                        <div id="text-gray-small" class="edu-1">
+                            <p>ARGENTINA PROGRAMA</p>
                         </div>
                         <div>
-                            <h3 class="card-text exp-1">mar-2022- Actualidad- 1 año</h3>
+                            <h3 class="card-text exp-1">Nov-2022- Actualidad- 5 meses</h3>
                         </div>
                         <div>
                             <h3 class="card-text exp-1">Buenos Aires (Argentina)</h3>
@@ -277,13 +281,13 @@
                     <div class="col-sm-2 text-end" style="padding-right: 30px;">
                                     
                         <div class="btn-edit">
-                            <a href="#" class="btn-rigth">
-                                <i class="bi bi-pencil-square" onclick="editarExperiencia()"></i>
+                            <a href="#EDUCACION" class="btn-rigth">
+                                <i class="bi bi-pencil-square" onclick="editarEducacion()"></i>
                             </a>
                         </div>
                     
                         <div>
-                            <a href="#EXPERIENCIA" class="btn-rigth">
+                            <a href="#EDUCACION" class="btn-rigth">
                                 <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
                             </a>
                         </div>
@@ -292,12 +296,12 @@
             </div>
             </section>
     
-            <!--experiencia 2-->
-            <section id="EXPERIENCIA2" name="EXPERIENCIA2">
+            <!--EDUCACION 2-->
+            <section id="id_educacion_2" name="educacion_2">
             <div class="card mat-card">
                 <div class="row justify-content-start">
                     <div class="col-sm-2 col-xl-1">
-                        <i class="bi bi-2-square-fill" id="logo-experiencia"></i>
+                        <i class="bi bi-2-square-fill" id="logo-educacion"></i>
                     </div>
                     <div class="col-sm-8 col-xl-9">
                         <div class="card-titles">
@@ -316,13 +320,75 @@
                     <div class="col-sm-2 text-end" style="padding-right: 30px;">
                                     
                         <div class="btn-edit">
-                            <a href="#EXPERIENCIA" class="btn-rigth">
+                            <a href="#EDUCACION" class="btn-rigth">
                                 <i class="bi bi-pencil-square" onclick="editarExperiencia()"></i>
                             </a>
                         </div>
                     
                         <div>
-                            <a href="#EXPERIENCIA" class="btn-rigth btn-trash">
+                            <a href="#EDUCACION" class="btn-rigth btn-trash">
+                                <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+        </section>
+    
+
+        <!-- PROYECTOS -->
+    <section class="PROYECTOS" id="id_proyectos_seccion">
+        <div class="card mat-card">
+            <!--titulos-->
+            <div class="row justify-content-between">
+                <!--columna izquierda-->
+                <div class="col-sm-5">
+                    <div class="card-titles">
+                        <h2>PROYECTOS</h2>
+                    </div>
+                </div>
+                <!--columna derecha-->
+                
+                    <div class="col-sm-2 text-end" style="padding-right: 60px;">
+                        <a href="#PROYECTOS" class="btn-rigth">
+                            <i class="bi bi-plus" onclick="agregarProyectos()"></i>
+                        </a>
+                    </div>
+            </div>
+            
+            <!--PROYECTOS 1-->
+            <section id="id_proyectos_1" name="proyectos_1">
+            <div class="card mat-card">
+                <div class="row justify-content-start">
+                    <div class="col-sm-2 col-xl-1">
+                        <i class="bi bi-1-square-fill" id="logo-educacion"></i>
+                    </div>
+                    <div class="col-sm-8 col-xl-9">
+                        <div class="card-titles exp-1">
+                            <h2>Desarrollador Web</h2>
+                        </div>
+                        <div id="text-gray-small" class="edu-1">
+                            <p>ARGENTINA PROGRAMA</p>
+                        </div>
+                        <div>
+                            <h3 class="card-text exp-1">Nov-2022- Actualidad- 5 meses</h3>
+                        </div>
+                        <div>
+                            <h3 class="card-text exp-1">Buenos Aires (Argentina)</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                    
+                        <div class="btn-edit">
+                            <a href="#PROYECTOS" class="btn-rigth">
+                                <i class="bi bi-pencil-square" onclick="editarProyectos()"></i>
+                            </a>
+                        </div>
+                    
+                        <div>
+                            <a href="#PROYECTOS" class="btn-rigth">
                                 <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
                             </a>
                         </div>
@@ -331,147 +397,48 @@
             </div>
             </section>
     
-        </section>
-    
-
-
-    <!-- javascript-->
-    <script>
-        function cambiar_parrafo(){
-            document.getElementById("file1").style.display="block";
-            document.getElementById("edit-arcade").style.display="block";
-            let texto= document.getElementById("text-arcade").innerText;
-            console.log(texto);
-            //https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
-        };
-
-        function myFunction2(valor){
-            document.getElementById("text-arcade").innerText=valor;
-        };
-
-        function logMessage(message) {
-            console.log(message+ "<br>");
-        };
-
-        //controla si se presiono un enter
-        let textarea= document.getElementById("edit-arcade")
-        textarea.addEventListener(`keyup`, (e) => {
-            logMessage(`key "${e.key}" released [event: keyup]`);
-            if (e.key=="Enter"){
-                document.getElementById("edit-arcade").style.display="none";
-                document.getElementById("file1").style.display="none";
-            }
-        });
-
-        //carga el contenido de un archivo de texto
-        //y lo muestra en el parrafo
-        function showFile (input){
-            let file= input.files[0];
-            alert(`File name: ${file.name}`); //e.g my.pong
-            alert(`last modified: ${file.lastModified}`);
-
-            let reader= new FileReader();
-            reader.readAsText(file);
-            reader.onload = function() {
-                console.log(reader.result);
-                myFunction2(reader.result);
-                document.getElementById("edit-arcade").style.display="none";
-                document.getElementById("file1").style.display="none";
-            };
-            reader.onerror=function(){
-                console.log(reader.error);
-            };
-        };
-
-        //BOTON TRASH - eliminar seccion a la que pertenece
-            function eliminarSeccion(){
-
-                //me gustaria que identifique el icono clickeado y que elimine la seccion donde esta contenido
-
-
-                 //console.log(document.onclick(event.srcElement));
-                  /* var elemento=event.srcElement;
-                 console.log(elemento.tagName);
-                HTMLDivElement 
-                 var comp = document.querySelector("section");
+            <!--PROYECTOS 2-->
+            <section id="id_proyectos_2" name="proyectos_2">
+            <div class="card mat-card">
+                <div class="row justify-content-start">
+                    <div class="col-sm-2 col-xl-1">
+                        <i class="bi bi-2-square-fill" id="logo-educacion"></i>
+                    </div>
+                    <div class="col-sm-8 col-xl-9">
+                        <div class="card-titles">
+                            <h2>Calculadora-js</h2>
+                        </div>
+                        <div class="text-arcade">
+                            <p>javascript</p>
+                        </div>
+                        <div>
+                            <h3 class="card-text">2020</h3>
+                        </div>
+                        <div>
+                            <h3 class="card-text">Buenos Aires (Argentina)</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                    
+                        <div class="btn-edit">
+                            <a href="#PROYECTOS" class="btn-rigth">
+                                <i class="bi bi-pencil-square" onclick="editarProyectos()"></i>
+                            </a>
+                        </div>
                     
-                while(elemento.tagName!=comp.tagName){
-                    elemento=elemento.parentElement;
+                        <div>
+                            <a href="#PROYECTOS" class="btn-rigth btn-trash">
+                                <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+        </section>
 
-                }
-                console.log("luego del while "+elemento.tagName);  */
-
-                var aBorrar= document.querySelector("section").id;
-                console.log("seccion elegida "+aBorrar);
-                //https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
-                //const el = document.querySelector("div.user-panel.main input[name='login']");
-                //const el = document.querySelector("div.user-panel:not(.main) input[name='login']");
-                document.querySelector("#EXPERIENCIA2").remove();
-
-                const baseElement = document.querySelector("section i");
-                
-                console.log(baseElement.querySelector("section").id);
-                
-                
-        }
-
-        // AL INICIAR  pruebas
-         /*document.addEventListener("DOMcontentLoaded", inicioPrueba());
-        function inicioPrueba(){
-            // Creamos un array vacio
-            var ElementosClick = new Array();
-            // Capturamos el click y lo pasamos a una funcion
-            document.onclick = captura_click;
-
-            function captura_click(e) {
-            // Funcion para capturar el click del raton
-            var HaHechoClick;
-            if (e == null) {
-            // Si hac click un elemento, lo leemos
-            HaHechoClick = event.srcElement;
-            } else {
-            // Si ha hecho click sobre un destino, lo leemos
-            HaHechoClick = e.target;
-            }
-            // Añadimos el elemento al array de elementos
-            ElementosClick.push(HaHechoClick);
-            // Una prueba con salida en consola
-            console.log("Contenido sobre lo que ha hecho click: "+ HaHechoClick.tagName+" "+ HaHechoClick.id);
-            }
-        } */
-
-        //BOTON PLUS - Agregar subseccion de experiencia
-        function agregarExperiencia(){
-            alert("nueva experiencia");
-            //var nuevaSeccionExperiencia= document.getElementById("EXPERIENCIA1").cloneNode(TRUE);
-            
-            var nuevaSeccionExp= document.querySelector("section#EXPERIENCIA1").cloneNode(true);
-            //alert("nueva seccion igual a: " + nuevaSeccionExp.tagName+nuevaSeccionExp.id);
-            //contar cantidad de secciones y sumarle 1. para numerar el id
-            
-            //seleccionar el ultimo icono y sumarle 1
-            //var etiquetanro= nuevaSeccionExp.querySelector("i").className;
-            var ultimaExperiencia= document.querySelectorAll('section > div > div > div > i');
-            //https://es.stackoverflow.com/questions/164394/mostrar-elementos-hijos-html-y-js/164400
-            var etiquetanro=ultimaExperiencia[ultimaExperiencia.length-1].className;
-
-            const nroExperiencia= parseInt(etiquetanro[6])+1;
-            alert(nroExperiencia);
-            nuevaSeccionExp.id= "EXPERIENCIA"+nroExperiencia;
-            const nombreDeClase= "bi bi-"+nroExperiencia+"-square-fill";
-            nuevaSeccionExp.querySelector("i").className=nombreDeClase;
-            //nuevaSeccionExp.getElementByClassName("bi bi-1-square-fill").className="bi bi-3-square-fill";
-            document.querySelector(".EXPERIENCIA .mat-card").appendChild(nuevaSeccionExp);
-
-
-        }
-
-        //BOTON EDIT- Editar experiencia a la que pertenece
-        function editarExperiencia(){
-            alert("editar experiencia");
-        }
-
-        /**/
-    </script>
+        
+    
 </body>
 </html>
