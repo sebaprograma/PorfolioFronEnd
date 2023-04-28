@@ -2,12 +2,17 @@
 body {
     background: rgba(156, 198, 240, .8)
 }
+#fixed-top{position:fixed; 
+    top:0;
+    margin-top:0
+    margin-right:100px
+}
+
 .mat-card{
     border-radius: 32px;
     margin: 20px 10px;
     padding: 20px;
     border-color: #0a66c2;
-    
 }
 .mat-card#first-card{
     padding: 0;
@@ -46,13 +51,6 @@ i {
     color: #0a66c2;
 }
 
-/*div.btn-edit i{
-    margin-left: 50px;
-    margin-top: -150px;
-    margin: 0px;
-    padding: 15px;
-}*/
-
 .text-gray-small {
     color: #6a6c6e;
     font-size: 18px;
@@ -79,4 +77,31 @@ i#logo-experiencia{
 .card-text{
     color: #6a6c6e;
     font-size: 25px;
+}
+
+#cuadroOculto::placeholder{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#cuadroVisto
+{
+    border: 6px;
+    border-color: green;
+    outline: 3px;
+    width: 370px;
+    height: 30px;
+
+}
+
+
+#cuadroOculto
+{
+    border: 0px;
+    outline: none;
+    width: 370px;
+    height: 30px;
+
 }
