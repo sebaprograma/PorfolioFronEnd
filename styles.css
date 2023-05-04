@@ -2,10 +2,10 @@
 body {
     background: rgba(156, 198, 240, .8)
 }
-#fixed-top{position:fixed; 
+#fixed-topbarra-encabezado{position:fixed; 
     top:0;
-    margin-top:0
-    margin-right:100px
+    margin-top:0;
+    margin-right:100px;
 }
 
 .mat-card{
@@ -104,4 +104,47 @@ i#logo-experiencia{
     width: 370px;
     height: 30px;
 
+}
+
+ul {
+    list-style: none;
+}
+
+
+.modoOscuro {
+    background-color: #fff;
+    color: #000;
+    filter: inver(1)
+}
+
+.skill-1{
+    border: thin solid #0a66c2;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: radial-gradient(white 30%, #0a66c2 30%, transparent 33%),
+    conic-gradient(#328be4 0% 65%, rgb(206, 206, 206) 50%);
+    border-radius: 50%;
+}
+
+/*barra de progreso A*/
+.barra_progreso{
+    height: 25px;
+    margin: 5px;
+}
+.PROGRESO-A{
+    width: 25%;
+}
+.PROGRESO-B{
+    width: 30%;
+}
+.PROGRESO-C{
+    width: 35%;
+}
+.PROGRESO-D{
+    width: 60%;
+}
+.PROGRESO-E{
+    width: 30%;
 }
