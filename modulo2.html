@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SC</title>
-
+    <title>SC | Argentina Programa</title>
+    <link rel="icon" type="image/x-icon" href="/laptop.svg">
   <!-- bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -23,17 +23,16 @@
 
 
     <!-- Barra de navegacion -->
-    <nav class="navbar-expand-md sticky-top card mat-card">
-        
+    
+    <nav class="navbar navbar-expand-md sticky-top card mat-card">
         
         <div id="fixed-top">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler card" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
         
-          
-          <div class="collapse navbar-collapse" id="navbar-toggler">
+          <div class="collapse navbar-collapse container-fluid" id="navbar-toggler">
             <div class="container-fluid row  justify-content-between">
 
                 <!-- logo -->
@@ -42,7 +41,7 @@
                 <img src="logo_seba.jpeg" width="50" alt="Logo de la página web">
                 </a></div>
 
-                <!-- items --> 
+                <!-- items -->
                 <div class="col-sm-4 d-flex justify-content-center align-items-center">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -60,23 +59,23 @@
                 <!-- redes sociales -->
                 <div class="iconos-redes-sociales col-sm-5">
                     <ul class="row justify-content-end navbar-nav align-items-center">   
-                        <li class="col-md-1 nav-item"><a class="nav-link" href="https://wa.me/5491166039051" target="_blank" rel="noopener noreferrer">
+                        <li class="col-md-2 nav-item"><a class="nav-link" href="https://wa.me/5491166039051" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-whatsapp"></i>
                         </a></li>
 
-                        <li class="col-md-1 nav-item"><a class="nav-link" href="https://github.com/sebaprograma/" target="_blank" rel="noopener noreferrer">
+                        <li class="col-md-2 nav-item"><a class="nav-link" href="https://github.com/sebaprograma/" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                         </a></li>
                         
-                        <li class="col-md-1 nav-item"><a class="nav-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <li class="col-md-2 nav-item"><a class="nav-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                         </a></li>
                         
-                        <li class="col-md-1 nav-item"><a class="nav-link" href="mailto:mmo.sebastian@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <li class="col-md-2 nav-item"><a class="nav-link" href="mailto:mmo.sebastian@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-envelope"></i>
                         </a></li>
 
-                        <li class="col-md-1 nav-item "><button class="btn btn-primary" type="submit">Ingresar</button></li>
+                        <li class="col-md-1 nav-item "><button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Ingresar</button></li>
                         
                         <li class="col-md-1 nav-item"></li>
                     
@@ -85,11 +84,134 @@
            </div>
 
         </div>
-        
-        
       </nav>
 
 
+      <!-- MODAL INGRESAR -->
+        <!--
+         <section>   
+           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content card mat-card text-center">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-signin">
+                                <div><img class="mb-4" src="/logo_seba.jpeg" alt="" width="72" height="72"></div>
+                                <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+                                <label for="inputEmail" class="sr-only">Email</label>
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                                <label for="inputPassword" class="sr-only">Constraseña</label>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Constraseña" required>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                    <input type="checkbox" value="remember-me"> Recordar
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+                            <div style="margin-top:15px"><a class="mt-5 mb-3 text-muted">Registrarme</a></div>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content card mat-card">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-signin">
+                                <div><img class="mb-4" src="/logo_seba.jpeg" alt="" width="72" height="72"></div>
+                                <h1 class="h3 mb-3 font-weight-normal">Ingresar</h1>
+                                <label for="inputEmail" class="sr-only">Email</label>
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                                <label for="inputPassword" class="sr-only">Constraseña</label>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Constraseña" required>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                    <input type="checkbox" value="remember-me"> Recordar
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+                            
+                       <div><button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrarme</button></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                          <label for="validationServer01" class="form-label">Primer nombre</label>
+                          <input type="text" class="form-control is-valid" id="validationServer01" value="Juan" required>
+                          <div class="valid-feedback">
+                            Ok!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationServer02" class="form-label">Segundo Nombre</label>
+                          <input type="text" class="form-control is-valid" id="validationServer02" value="Gonzalez" required>
+                          <div class="valid-feedback">
+                            Ok!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationServerUsername" class="form-label">Usuario</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                              Elegí nombre de usuario.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationServerPassword" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="validationServerPassword" aria-describedby="validationServerPasswordFeedback" required>
+                          <div id="validationServerPasswordFeedback" class="invalid-feedback">
+                            Ingrese contraseña.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationServerPassword02" class="form-label">Repetir contraseña</label>
+                            <input type="password" class="form-control" id="validationServerPassword02" aria-describedby="validationServerPassword02Feedback" required>
+                            <div id="validationServerPassword02Feedback" class="invalid-feedback">
+                              Vuelva a ingresar contraseña.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Crear usuario</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
+    
  
     <!--contenido 2-->
     <section name="contenido">
@@ -602,54 +724,55 @@
                     </div>
                     <div class="col">
                         <h4>css</h4>
-                        <div class="skill-1"><h6>30%</h6></div>
+                        <div class="skill-2"><h6>30%</h6></div>
                     </div>
                     <div class="col">
                         <h4>javascript</h4>
-                        <div class="skill-1"><h6>35%</h6></div>
+                        <div class="skill-3"><h6>35%</h6></div>
                     </div>
                     <div class="col">
                         <h4>MySql</h4>
-                        <div class="skill-1"><h6>60%</h6></div>
+                        <div class="skill-4"><h6>60%</h6></div>
                     </div>
                     <div class="col">
                         <h4>Spring Boot</h4>
-                        <div class="skill-1"><h6>30%</h6></div>
+                        <div class="skill-5"><h6>30%</h6></div>
                     </div>
                 </div>
 
                 <!--barras-->
-                <div class="row align-items-center">
-                    <div class="col-sm-2 text-end"><h6>HTML</h6></div>
-                    <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_html" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped PROGRESO-A"><h6>25%</h6></div>
+                <div style="margin-top: 20px;">
+                    <div class="row align-items-center">
+                        <div class="col-sm-2 text-end"><h6>HTML</h6></div>
+                        <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_html" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped PROGRESO-A"><h6>65%</h6></div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-2 text-end"><h6>CSS</h6></div>
+                        <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-success PROGRESO-B"><h6>30%</h6></div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-2 text-end"><h6>JavaScript</h6></div>
+                        <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-info PROGRESO-C"><h6>35%</h6></div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-2 text-end"><h6>MySql</h6></div>
+                        <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-warning PROGRESO-D"><h6>60%</h6></div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-2 text-end"><h6>Spring Boot</h6></div>
+                        <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-danger PROGRESO-E"><h6>30%</h6></div>
+                        </div>
                     </div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-2 text-end"><h6>CSS</h6></div>
-                    <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped bg-success PROGRESO-B"><h6>30%</h6></div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-2 text-end"><h6>JavaScript</h6></div>
-                    <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped bg-info PROGRESO-C"><h6>35%</h6></div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-2 text-end"><h6>MySql</h6></div>
-                    <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped bg-warning PROGRESO-D"><h6>60%</h6></div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-sm-2 text-end"><h6>Spring Boot</h6></div>
-                    <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_css" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped bg-danger PROGRESO-E"><h6>30%</h6></div>
-                    </div>
-                </div>
-
 
             </div>
             </section>
@@ -657,6 +780,7 @@
             
         </div>
         </section>
+
 
         <!-- FOOTER -->
         <div class="card mat-card">
