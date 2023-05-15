@@ -1,0 +1,62 @@
+ <!-- PROYECTOS -->
+ <section class="PROYECTOS" id="id_proyectos_seccion">
+    <div class="card mat-card">
+        <!--titulos-->
+        <div class="row justify-content-between">
+            <!--columna izquierda-->
+            <div class="col-sm-5">
+                <div class="card-titles">
+                    <h2>PROYECTOS</h2>
+                </div>
+            </div>
+            <!--columna derecha-->
+            
+                <div class="col-sm-2 text-end" style="padding-right: 60px;">
+                    <a href="#PROYECTOS" class="btn-rigth">
+                        <i class="bi bi-plus" onclick="agregarProyectos()"></i>
+                    </a>
+                </div>
+        </div>
+        
+        <!--PROYECTOS 1-->
+        <ul>
+            <li *ngFor="let project of projectList">
+        <section id="id_proyectos_1" name="proyectos_1">
+        <div class="card mat-card">
+            <div class="row justify-content-start">
+                <div class="col-sm-2 col-xl-1">
+                    <i class="bi bi-1-square-fill" id="logo-educacion"></i>
+                </div>
+                <div class="col-sm-8 col-xl-9">
+                    <div class="card-titles exp-1">
+                        <h2>{{project.position}}</h2>
+                    </div>
+                    <div id="text-gray-small" class="edu-1">
+                        <p>{{project.company}}</p>
+                    </div>
+                    <div>
+                        <h3 class="card-text exp-1"><time>{{project.start}}</time>- <time>{{project.end}}</time> -{{project.timeElapsed}}</h3>
+                    </div>
+                    <div>
+                        <h3 class="card-text exp-1">{{project.ubication}}</h3>
+                    </div>
+                </div>
+                <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                
+                    <div class="btn-edit">
+                        <a href="#PROYECTOS" class="btn-rigth">
+                            <i class="bi bi-pencil-square" onclick="editarProyectos()"></i>
+                        </a>
+                    </div>
+                
+                    <div>
+                        <a href="#PROYECTOS" class="btn-rigth">
+                            <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        </li>
+        </ul>

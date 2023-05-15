@@ -1,0 +1,84 @@
+<!--contenido 2-->
+<section name="contenido">
+    <div class="card mat-card" id="first-card">
+        
+        <div id="profile_background"><img [src]="miPorfolio.backImage" class="card-img-top"></div>
+        <div id="info" style="margin: 25x">
+    
+            <div class="row">
+                <div class="col-sm-1" id="info-img">
+                    <img class="profile_image" [src]="miPorfolio.image">
+                            
+                </div>
+                <div class="col-sm-11">
+                    <div class="btn-edit" style="margin-left: 100px;"><a href="#" class="btn-rigth"><i class="bi bi-pencil-square"></i></a></div>
+                </div>
+            </div>
+    
+            <!--informacion-->
+            <div class="row">
+                <div class="col-sm-5">
+                    <div id="info-data" style="margin: 20px">
+                        <h1>{{miPorfolio.name}}</h1>
+                        <div id="info-company">{{miPorfolio.puesto}}</div>
+                        <div id="info-contact">
+                            <span>{{miPorfolio.ubication}}</span>
+                            <span><a href="#">Información de contacto</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 offset-md-2"style="padding-right: 100px;">
+                        <!--  LOGOS  -->
+                    <div class="d-flex flex-row-reverse">
+                    <ul id="info-details">
+                        <li><a href="#"><img [src]="miPorfolio.logoArgProg" class="logo-particular"></a>
+                           <!-- <h3>ARG PROG</h3> -->
+                        </li>
+                        <li style="padding-top: 20px;"><a href="#">
+                            <img [src]="miPorfolio.logoPersonal" class="logo-particular">   
+                            </a>
+                            <!-- <h3>SEBA</h3> -->
+                        </li>
+                    </ul>
+                    </div>
+                        
+                </div>
+                <div class="col-sm-2" style="padding-right: 80px;">
+                        
+                    <div class="d-flex flex-row-reverse" >
+                    <ul id="info-details">
+                        <li><a href="#"><img [src]="miPorfolio.logoUniversidad" class="logo-institute"></a>
+                           <!-- <h3>UNAJ</h3> -->
+                        </li>
+                        <li  style="padding-top: 20px;"><a href="#">
+                            <img [src]="miPorfolio.logoEnte" class="logo-institute">   
+                            </a>
+                            <!-- <h3>INTI</h3> -->
+                        </li>
+                    </ul>
+                    </div>
+                        
+                </div>
+                
+            </div>
+        
+    
+            <!--botones-->
+            <div id="info-actions">
+                
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Tengo interés en</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Añadir Sección</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">Más</label>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+    </section>

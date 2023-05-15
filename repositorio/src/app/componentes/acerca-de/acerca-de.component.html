@@ -1,0 +1,31 @@
+<!-- ACERCA DE-->
+<section id="id_Acerca_de">
+    <div class="card mat-card">
+        <div class="row justify-content-between">
+            
+            <div class="card-titles col-sm-4">
+                <h2>ACERCA DE</h2>
+                
+            </div>
+    
+            <div class="col-sm-2 text-end" style="margin-right: 45px;">
+                    <a class="btn-rigth">
+                        <div class="btn-edit" onclick="cambiar_parrafo()"><i class="bi bi-pencil-square"></i></div>
+                        
+                    </a>
+            </div>
+    
+            <div>
+                <p id="text-arcade text-gray-small">{{AcercaDE.about}}</p>
+            </div>
+            <div>
+                <input id="edit-arcade" type="text" oninput="myFunction2(this.value)" style="display:none" placeholder="ingresa nueva descripcion">
+            </div>
+            <div>
+                <input id="file1" type="file" onchange="showFile(this)" style="display:none">
+            </div>
+        </div>
+    
+    </div>
+    </section>
+    

@@ -1,0 +1,64 @@
+    <!-- EDUCACION -->
+    <section class="EDUCACION" id="id_educacion_seccion">
+        <div class="card mat-card">
+            <!--titulos-->
+            <div class="row justify-content-between">
+                <!--columna izquierda-->
+                <div class="col-sm-5">
+                    <div class="card-titles">
+                        <h2>EDUCACION</h2>
+                    </div>
+                </div>
+                <!--columna derecha-->
+                
+                    <div class="col-sm-2 text-end" style="padding-right: 60px;">
+                        <a href="#EDUCACION" class="btn-rigth">
+                            <i class="bi bi-plus" onclick="agregarEducacion()"></i>
+                        </a>
+                    </div>
+            </div>
+            
+            <!--EDUCACION 1-->
+            <ul>
+                <li *ngFor="let educacion of educacionList">
+                <section id="id_educacion_1" name="educacion_1">
+                <div class="card mat-card">
+                    <div class="row justify-content-start">
+                        <div class="col-sm-2 col-xl-1">
+                            <i class="bi bi-1-square-fill" id="logo-educacion"></i>
+                        </div>
+                        <div class="col-sm-8 col-xl-9">
+                            <div class="card-titles exp-1">
+                                <h2>{{educacion.position}}</h2>
+                            </div>
+                            <div id="text-gray-small" class="edu-1">
+                                <p>{{educacion.company}}</p>
+                            </div>
+                            <div>
+                                <h3 class="card-text exp-1"><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time> - {{educacion.timeElapsed}}</h3>
+                            </div>
+                            <div>
+                                <h3 class="card-text exp-1">{{educacion.ubication}}</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                        
+                            <div class="btn-edit">
+                                <a href="#EDUCACION" class="btn-rigth">
+                                    <i class="bi bi-pencil-square" onclick="editarEducacion()"></i>
+                                </a>
+                            </div>
+                        
+                            <div>
+                                <a href="#EDUCACION" class="btn-rigth">
+                                    <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 </section>
+                </li>
+            </ul>
+            
+    

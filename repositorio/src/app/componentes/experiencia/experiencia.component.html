@@ -1,0 +1,117 @@
+<!-- EXPERIENCIA-->
+<section class="EXPERIENCIA" id="id_experiencia">
+    <div class="card mat-card">
+        <!--titulos-->
+        <div class="row justify-content-between">
+            <!--columna izquierda-->
+            <div class="col-sm-5">
+                <div class="card-titles">
+                    <h2>EXPERIENCIA</h2>
+                </div>
+            </div>
+            <!--columna derecha-->
+            
+                <div class="col-sm-2 text-end" style="padding-right: 60px;">
+                    <a href="#EXPERIENCIA" class="btn-rigth">
+                        <i class="bi bi-plus" onclick="agregarExperiencia()"></i>
+                    </a>
+                </div>
+        </div>
+        
+        <!--experiencia template-->
+        <template id="EXPERIENCIA_template">
+            <section id="EXPERIENCIA">
+                <div class="card mat-card">
+                    <div class="row justify-content-start">
+                        <div class="col-sm-2 col-xl-1">
+                            <i class="bi bi-1-square-fill" id="logo-experiencia"></i>
+                        </div>
+                        <div class="col-sm-8 col-xl-9">
+                            <div class="card-titles exp-">
+                                <h2><input class="puesto" id="cuadroOculto" type="text" placeholder="Desarrollador" readonly></h2>
+                            </div>
+                            <div id="text-gray-small" class="exp-">
+                                <p contenteditable='false'>ARGENTINA PROGRAMA</p>
+                            </div>
+                            <div>
+                                <h3><p class="card-text exp-" id="tiempo_exp">Nov-22- May-23- X meses</p></h3>
+                                <span id="cambio_fecha" style="display: none">
+                                    <label id="label_comienzo" for="start">Fecha de inicio:</label>
+                                    <input type="date" id="fechaComienzo" name="trip-start_exp" min="1990-01-01" value="2022-11-01">
+                                    <label id="label_fin" for="start" >Fecha de fin:</label>
+                                    <input type="date" id="fechaFin" name="trip-finish_exp" value="2023-07-22" max="2023-05-15">
+                                    <button type="button" id="fecha">Cambiar</button>;
+                                </span>
+                            </div>
+                            <div>
+                                <h3><p contenteditable='false' class="card-text exp-" id="ubicacion_exp">Buenos Aires (Argentina)</p></h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                        
+                            <div class="btn-edit">
+                                <a href="#EXPERIENCIA" class="btn-rigth">
+                                    <i class="bi bi-pencil-square" onclick="editarExperiencia()"></i>
+                                </a>
+                            </div>
+                        
+                            <div>
+                                <a href="#EXPERIENCIA" class="btn-rigth">
+                                    <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+        </template>
+    
+         <!--experiencia 1-->
+            <ul>
+                <li *ngFor="let experiencia of experienciaList">
+                <section id="EXPERIENCIA1">
+                <div class="card mat-card">
+                    <div class="row justify-content-start">
+                        <div class="col-sm-2 col-xl-1">
+                            <i class="bi bi-1-square-fill" id="logo-experiencia"></i>
+                        </div>
+                        <div class="col-sm-8 col-xl-9">
+                            <div class="card-titles exp-1">
+                                <h2><input class="puesto" id="cuadroOculto" type="text" [placeholder]="experiencia.position" readonly></h2>
+                            </div>
+                            <div id="text-gray-small" class="exp-1">
+                                <p contenteditable='false'>{{experiencia.company}}</p>
+                            </div>
+                            <div>
+                                <h3><p class="card-text exp-1" id="tiempo_exp"><time>{{experiencia.start}}</time> -<time>{{experiencia.end}}</time> - {{experiencia.timeElapsed}}</p></h3>
+                                <span id="cambio_fecha" style="display: none">
+                                    <label id="label_comienzo" for="start">Fecha de inicio:</label>
+                                    <input type="date" id="fechaComienzo" name="trip-start_exp" min="1990-01-01" value="2022-11-01">
+                                    <label id="label_fin" for="start" >Fecha de fin:</label>
+                                    <input type="date" id="fechaFin" name="trip-finish_exp" value="2023-07-22" max="2023-05-15">
+                                    <button type="button" id="fecha">Cambiar</button>;
+                                </span>
+                            </div>
+                            <div>
+                                <h3><p contenteditable='false' class="card-text exp-1" id="ubicacion_exp">{{experiencia.ubication}}</p></h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 text-end" style="padding-right: 30px;">
+                                        
+                            <div class="btn-edit">
+                                <a href="#EXPERIENCIA" class="btn-rigth">
+                                    <i class="bi bi-pencil-square" onclick="editarExperiencia()"></i>
+                                </a>
+                            </div>
+                        
+                            <div>
+                                <a href="#EXPERIENCIA" class="btn-rigth">
+                                    <i class="bi bi-trash3" onclick="eliminarSeccion()"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </li>
+        </ul>

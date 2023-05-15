@@ -1,0 +1,87 @@
+{
+	"name": "Sebastian Cacere",
+	"backImage": "https: //png.pngtree.com/background/20210714/original/pngtree-blue-carbon-background-with-sport-style-and-golden-light-picture-image_1200848.jpg",
+	"image": "https://img.freepik.com/vector-premium/avatar-hombre-imagen-perfil-web-masculina-generica_53562-18550.jpg",
+	"puesto": "Full Stack Developer Jr",
+	"company": {
+		"name": "CONICET",
+		"url": "#"
+	},
+	"ubication": "Florencio Varela-Buenos Aires (Argentina)",
+	"about":"Técnico, estudiante, apasionado de la tecnología",
+	"logoArgProg":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKl3AsmrDbLicEgJgZm_hDcHB7LTnKvslfpPVsgbrC1_iDb38Gbqsvgkwz8KNO4rFF_s&usqp=CAU",
+	"logoPersonal":"logo_seba.jpeg",
+	"logoUniversidad":"https://www.unaj.edu.ar/wp-content/uploads/2016/06/logo-unaj-2016-01.jpg",
+	"logoEnte":"https://www.inti.gob.ar/assets/imagenes/inti-logo.png",
+	"experience":[{
+			"position":"Desarrolador BackEnd",
+			"company":"Argentina Programa",
+			"start":"Nov-22",
+			"end":"may-23",
+			"timeElapsed":"6 meses",
+			"ubication":"Buenos Aires (Argentina)"
+		},
+		{
+			"position":"Desarrolador FrontEnd",
+			"company":"Argentina Programa",
+			"start":"Nov-22",
+			"end":"may-23",
+			"timeElapsed":"6 meses",
+			"ubication":"Buenos Aires (Argentina)"
+		}
+	],
+	"education":[{
+			"position":"Desarrolador web Full Stack",
+			"company":"Argentina Programa",
+			"start":"Nov-22",
+			"end":"may-23",
+			"timeElapsed":"6 meses",
+			"ubication":"Buenos Aires (Argentina)"
+		},
+		{
+			"position":"Maestro Mayor de Obras",
+			"company":"EET Nº2 - FLORENCIO VARELA",
+			"start":"2001",
+			"end":"2004",
+			"timeElapsed":"",
+			"ubication":"Buenos Aires (Argentina)"
+		}
+	],
+	"projects":[{
+			"position":"Desarrollador Web",
+			"company":"Argentina Programa",
+			"start":"Nov-22",
+			"end":"may-23",
+			"timeElapsed":"6 meses",
+			"ubication":"Buenos Aires (Argentina)"
+		},
+		{
+			"position":"Luvik-eco",
+			"company":"Tienda Online",
+			"start":"2019",
+			"end":"2019",
+			"timeElapsed":"3 semanas",
+			"ubication":"Buenos Aires (Argentina)"
+		}
+	],
+	"skills":[{
+			"name":"HTML",
+			"porcentaje":"65%"
+		},
+		{
+			"name":"CSS",
+			"porcentaje":"30%"
+		},
+		{
+			"name":"Javascript",
+			"porcentaje":"35%"
+		},
+		{
+			"name":"MySql",
+			"porcentaje":"60%"
+		},
+		{
+			"name":"Sprint Boot",
+			"porcentaje":"30%"
+		}]
+}

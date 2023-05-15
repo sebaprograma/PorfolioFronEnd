@@ -1,0 +1,234 @@
+body {
+    background: rgba(156, 198, 240, .8)
+}
+#fixed-topp{position:fixed; 
+    top:0;
+    margin-top:0;
+    margin-right:100px;
+}
+
+.mat-card{
+    border-radius: 32px;
+    margin: 20px 10px;
+    padding: 20px;
+    border-color: #0a66c2;
+}
+.mat-card#first-card{
+    padding: 0;
+}
+
+div#profile_background {
+    display: flex;
+    z-index: 1;
+    
+}
+div#first-card#profile-background img{
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+    
+}
+.card-img-top{
+    border-radius: 32px 32px 0 0;
+}
+
+.profile_image{
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -110px;
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+}
+div#info-actions{
+    margin: 20px;
+    display: flex;
+}
+
+i {
+    font-size: 30px;
+    color: #0a66c2;
+}
+
+.text-gray-small {
+    color: #6a6c6e;
+    font-size: 18px;
+}
+
+.logo-institute   {
+    width: 140px;
+    height: 50px;
+}
+
+.logo-particular   {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-right{
+    display: flex;
+    align-self: flex-end;
+}
+i#logo-experiencia{
+    font-size: 80px;
+}
+
+.card-text{
+    color: #6a6c6e;
+    font-size: 25px;
+}
+
+#cuadroOculto::placeholder{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#cuadroVisto
+{
+    border: 6px;
+    border-color: green;
+    outline: 3px;
+    width: 370px;
+    height: 30px;
+
+}
+
+#cuadroOculto
+{
+    border: 0px;
+    outline: none;
+    width: 370px;
+    height: 30px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.modoOscuro {
+    background-color: #fff;
+    color: #000;
+    filter: inver(1)
+}
+
+/*SKILLS CIRCULARES*/
+.skill-1{
+    border: thin solid #0a66c2;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: radial-gradient(white 30%, #0a66c2 30%, transparent 33%),
+    conic-gradient(#328be4 0% 65%, rgb(206, 206, 206) 50%);
+    border-radius: 50%;
+}
+.skill-2{
+    border: thin solid #0a66c2;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: radial-gradient(white 30%, #0a66c2 30%, transparent 33%),
+    conic-gradient(#22aa54 0% 30%, rgb(206, 206, 206) 30%);
+    border-radius: 50%;
+}
+.skill-3{
+    border: thin solid #0a66c2;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: radial-gradient(white 30%, #0a66c2 30%, transparent 33%),
+    conic-gradient(#32c9e4 0% 35%, rgb(206, 206, 206) 35%);
+    border-radius: 50%;
+}
+.skill-4{
+    border: thin solid #0a66c2;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: radial-gradient(white 30%, #0a66c2 30%, transparent 33%),
+    conic-gradient(#e4d532 0% 60%, rgb(206, 206, 206) 60%);
+    border-radius: 50%;
+}
+.skill-5{
+    border: thin solid #0a66c2;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: radial-gradient(white 30%, #0a66c2 30%, transparent 33%),
+    conic-gradient(#e43264 0% 30%, rgb(206, 206, 206) 0%);
+    border-radius: 50%;
+}
+
+/*barra de progreso A*/
+.barra_progreso{
+    height: 25px;
+    margin: 5px;
+}
+.PROGRESO-A{
+    width: 65%;
+}
+.PROGRESO-B{
+    width: 30%;
+}
+.PROGRESO-C{
+    width: 35%;
+}
+.PROGRESO-D{
+    width: 60%;
+}
+.PROGRESO-E{
+    width: 30%;
+}
+
+/* FORMULARIO DE INGRESO */
+.ingresar{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5  
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }

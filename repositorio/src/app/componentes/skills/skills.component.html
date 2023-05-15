@@ -1,0 +1,56 @@
+<!-- SKILLS -->
+<section class="SKILLS" id="id_skills_seccion">
+    <div class="card mat-card">
+        <!--titulos-->
+        <div class="row justify-content-between">
+            <!--columna izquierda-->
+            <div class="col-sm-5">
+                <div class="card-titles">
+                    <h2>SKILLS</h2>
+                </div>
+            </div>
+            <!--columna derecha-->
+            
+                <div class="col-sm-2 text-end" style="padding-right: 60px;">
+                    <a href="#PROYECTOS" class="btn-rigth">
+                        <i class="bi bi-plus" onclick="agregarProyectos()"></i>
+                    </a>
+                </div>
+        </div>
+        
+        <!--graficos-->
+        <section id="id_proyectos_1" name="proyectos_1">
+        <div class="card mat-card">
+
+            <!--circulos-->
+            <div class="container-fluid row">
+                <ul *ngFor="let projectos of skillsList">
+                    <li> 
+                    <div class="col">
+                            <h4>{{projectos.name}}</h4>
+                        <div class="skill-1"><h6>{{projectos.porcentaje}}</h6></div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+            <!--barras-->
+            <ul *ngFor="let project of skillsList">
+                <li>
+                <div style="margin-top: 20px;">
+                    <div class="row align-items-center">
+                        <div class="col-sm-2 text-end"><h6>{{project.name}}</h6></div>
+                        <div class="progress col-sm-8 barra_progreso" role="progressbar" aria-label="progreso_html" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped PROGRESO-A"><h6>{{project.porcentaje}}</h6></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            </ul>
+        </div>
+        </section>
+
+        
+    </div>
+    </section>
